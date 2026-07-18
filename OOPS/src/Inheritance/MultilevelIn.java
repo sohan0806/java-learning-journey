@@ -4,28 +4,24 @@ class Animal {
         System.out.println("run");
     }
 }
-class Dog extends Animal {
-    void bark() {
-        System.out.println("bark");
+class Bird extends Animal {
+    void nest() {
+        System.out.println("nest");
     }
 }
-class Cat extends Dog { // just for example 
-    void meow() {
-        System.out.println("meow");
+class pigeon extends Bird { // just for example 
+    void eat() {
+        System.out.println("eat");
     }
 }
 
 public class MultilevelIn {
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        Dog dog = new Dog();
+        pigeon p1 = new pigeon();
 
-        cat.run();
-        cat.meow();
-        cat.bark(); 
-
-        dog.run();
-        dog.bark();
+        p1.eat();
+        p1.nest();
+        p1.run();
     }
 
 }
